@@ -3,20 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>About-BYPHAX</title>
+    <link rel="stylesheet" href="style.css"/>
 </head>
-<body>
+<body >
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
+            <li> 
+                <span class="dropdown"> 
+                 <a href="#" onclick="toggleDropdown()"> Products and Services</a>
+                 <div class="dropdown-content" id="dropdownMenu">
+                   <a href="#Anesthesia Machine" onclick="scrollToSection('Anesthesia Machine')">Anesthesia Machine  </a>
+                   <a href="#Mammo Scan " onclick="scrollToSection('Mammo Scan ')">Mammo Scan  </a>
+                   <a href="#C-Arm" onclick="scrollToSection('C-Arm')">C-Arm </a>
+                   <a href="#Defibrillator" onclick="scrollToSection('Defibrillator')">Defibrillator </a>
+                   <a href="#Defibrillator" onclick="scrollToSection('Computer Tomography Scanner')">Computer Tomography Scanner</a>
+                   <a href="#Magnetic Resonance Imaging" onclick="scrollToSection('Magnetic Resonance Imaging')"> Magnetic Resonance Imaging</a>
+                   <a href="#Ultrasound/Sonograph" onclick="scrollToSection('Ultrasound/Sonography')">Ultrasound/Sonography </a>
+                 </div>
+                </span>
+            </li>
         </ul>
     </nav>
-    <section>
-        <h1>About Me</h1>
-        <p>This is the about page.</p>
+    <section  class="about">
+        <h1> ABOUT US.</h1>
+        <p>
+            <div>BYPHAX ENGINEERING LTD</div> 
+            <span>We are a dynamic firm focused on providing solutions
+             for you in:
+            </span>
+            <ul>
+                <li>Medical Equipment Sales & Installation</li>
+                <li>Equipment Maintenance & Support Services </li>
+                <li>Healthcare Project Management & Development</li>
+                <li>Healthcare Facility Design Services</li>
+            </ul>
+            <h2>
+                Our team Consists of <i>biomedical engineers</i>, <i>project managers</i> and <i>facility planners</i>,
+                dedicated to delivering quality and efficient solutions.
+            </h2>
+        </p>
     </section>
 </body>
 </html>

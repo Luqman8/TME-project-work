@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Contact-BYPHAX</title>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
     <nav>
@@ -12,11 +12,52 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
+            <li> 
+                <span class="dropdown"> 
+                 <a href="#" onclick="toggleDropdown()"> Products and Services</a>
+                 <div class="dropdown-content" id="dropdownMenu">
+                   <a href="#Anesthesia Machine" onclick="scrollToSection('Anesthesia Machine')">Anesthesia Machine  </a>
+                   <a href="#Mammo Scan " onclick="scrollToSection('Mammo Scan ')">Mammo Scan  </a>
+                   <a href="#C-Arm" onclick="scrollToSection('C-Arm')">C-Arm </a>
+                   <a href="#Defibrillator" onclick="scrollToSection('Defibrillator')">Defibrillator </a>
+                   <a href="#Defibrillator" onclick="scrollToSection('Computer Tomography Scanner')">Computer Tomography Scanner</a>
+                   <a href="#Magnetic Resonance Imaging" onclick="scrollToSection('Magnetic Resonance Imaging')"> Magnetic Resonance Imaging</a>
+                   <a href="#Ultrasound/Sonograph" onclick="scrollToSection('Ultrasound/Sonography')">Ultrasound/Sonography </a>
+                 </div>
+                </span>
+            </li>
         </ul>
     </nav>
-    <section>
-        <h1>Contact Information</h1>
-        <p>Email: example@example.com</p>
+    <section class="contact">
+        <h1>LET'S WORK TOGETHER</h1>
+        <p>Questions? We'd love to hear from you!</p>
+
+        <div class="1st">
+         <input type="text" id="name" name="name" placeholder="NAME" required>
+         <input type="email" id="email" name="email" placeholder="EMAIL" required>
+        </div>
+
+        <div class="2nd">
+            <input type="text" id="institution" name="institution" placeholder="INSTITUTION" required>
+            <input type="tel" id="phonenumber" name="phonenumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="PHONE NUMBER"required>
+        </div>
+
+        <div class="3rd">
+         <textarea name="how can we help" id="how can we help" rows="8" placeholder="how can we help?" required></textarea>
+        </div>
+
+        <div class="4th">
+            <button type="submit">Contact Us</button>
+        </div>
+
+        <p3>I consent to receive text message communications regarding my inquiry. To opt-out, reply STOP, or reply HELP for more details. Message frequency may vary. Standard message and data rates may apply. You can review our Privacy Policy to understand how your data is used.</p3>
+        
+        <h4>Follow Us</h4>
+       <div class="handles">
+        <a href="#" target="_self"><img src="Instagram.png" alt="instagram page" width="60" height="60"></a>
+        <a href="#" target="_self"><img src="Facebook.png" alt="facebook page" width="60" height="60"></a>
+        <a href="#" target="_self"><img src="Linkedin.png" alt="linkedIn page" width="60" height="60"></a>
+       </div>
     </section>
 </body>
 </html>
