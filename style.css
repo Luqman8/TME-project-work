@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #dbdbdb;
 }
 
 *{
@@ -55,65 +56,210 @@ nav ul li a:hover {
 }
 
 .about {
-     color: aliceblue;
      background-image: url(doctor-performing-medical-research-lab.jpg) ;
      width: 100%;
-     height: 100vh;
+     height: 300px;
      background-position: top center;
      background-size: cover;
      background-repeat: no-repeat;
-     margin: 0;
+     filter: brightness(0.8);
+     margin-top: 20px;
      padding: 0;
-}
-
-.overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.5);
-}
-
-.text-container{
- position: relative;
- color: white;
- padding: 20px;
 }
 
 .about{
     padding: 30px;
-    filter: brightness(0.8);
 }
 .about div{
-    color: #525df5ea;
+    color: #eaed1aea;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 40px;
     padding-left: 700px;
 }
 
 .about h1{
-    color: rgb(252, 253, 255);
+    color: rgba(255, 255, 255, 0.959);
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 90px;
-    padding-left: 700px;
+    padding-left: 710px;
     padding-top: 20px;
 }
 
 .about span{
-    color: rgb(255, 255, 255);
+    color: rgb(12, 12, 12);
     justify-content: center;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 30px;
+    font-size: 20px;
     margin-left: 10px;
     position: relative;
-    top: 40px;
+    top: 90px;
 }
 .about ul{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 25px;
-    color: #F5F5F5;
+    font-size: 20px;
+    color: #080808ea;
     position: relative;
-    top: 70px;
+    top: 100px;
     margin-left: 10px;
 }
+
+.about h2{
+    font-size: 20px;
+    color: #050404ea;
+    position: relative;
+    top: 110px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.contact{
+    background-image:url(senior-woman-visiting-therapist-clinic-getting-consultation-checking-her-health.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    background-position: top center;
+    margin-top: 20px;
+    
+}
+
+.contact h1{
+    font-size: 75px;
+    color: #1b2172ea;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+    top: 300px;
+    margin-left: 40px;
+}
+
+.contact p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    position: relative;
+    margin-left: 600px;
+    top: 350px;
+}
+
+.contact div{
+    margin-left: 570px;
+    position: relative;
+    top: 400px;
+}
+
+
+input,select,textarea{
+    width: 40%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-bottom-width: 1.5px;
+    border-color: #5a5858;
+    border-top: none;
+    border-radius: none;
+    border-right: none;
+    border-left: none;
+    font-size: 14px;
+    color: #333;
+    margin: 20px;
+    background-color: #dbdbdb;
+}
+
+textarea{
+    resize: none;
+    width: 88%;
+}
+
+button{
+    background-color: white;
+    color: #1b2172ea;
+    border: 0.5px solid #1b2172ea;
+    padding: 10px 20px;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 50px;
+    width: 200px;
+    height: 60px;
+    position: relative;
+    left: 30px;
+    top: 30px;
+    margin-bottom: 50px;
+}
+
+button:hover{
+    background-color: #1b2172ea;
+    color:white;
+     
+}
+
+h4{
+    margin-left: 50px;
+}
+
+.contact div.handles{
+    display: flex;
+    position: relative;
+    top: 10px;
+    right: 550px;
+}
+
+p3{
+    position: relative;
+    top: 400px;
+    justify-content: center;
+    font-size: 13px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+
+}
+
+img{
+    display: block;
+}
+
+.dropdown{ 
+    position:relative ;
+    display: inline-block;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 8px 5px;
+    text-decoration: none;
+    display: block;
+    font-size: larger;
+}
+
+.dropdown-content a:hover{
+    background-color: none;
+    font-size: larger;
+    display: flex;
+
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+    
+}
+
+.section{
+    display: none;
+    padding: 40px;
+    margin-top: 20px;
+    border: none;
+    background-color: none;
+    font-size: larger;
+}
+
+.section.active{
+    display: block;
+    
+}
+

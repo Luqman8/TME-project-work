@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-    <link rel="stylesheet" href="style.css"/>
+    <title>BYPHAX ENGINEERING LTD</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav>
@@ -12,11 +12,100 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
+            <li> 
+                <span class="dropdown"> 
+                 <a href="#" onclick="toggleDropdown()"> Products and Services</a>
+                 <div class="dropdown-content" id="dropdownMenu">
+                   <a href="#Anesthesia Machine" onclick="scrollToSection('Anesthesia Machine')">Anesthesia Machine  </a>
+                   <a href="#Mammo Scan " onclick="scrollToSection('Mammo Scan ')">Mammo Scan  </a>
+                   <a href="#C-Arm" onclick="scrollToSection('C-Arm')">C-Arm </a>
+                   <a href="#Defibrillator" onclick="scrollToSection('Defibrillator')">Defibrillator </a>
+                   <a href="#Defibrillator" onclick="scrollToSection('Computer Tomography Scanner')">Computer Tomography Scanner</a>
+                   <a href="#Magnetic Resonance Imaging" onclick="scrollToSection('Magnetic Resonance Imaging')"> Magnetic Resonance Imaging</a>
+                   <a href="#Ultrasound/Sonograph" onclick="scrollToSection('Ultrasound/Sonography')">Ultrasound/Sonography </a>
+                 </div>
+                </span>
+            </li>
+        
         </ul>
     </nav>
-    <section class="index">
-        <h1>Welcome to My Website</h1>
-        <p>This is the home page.</p>
-    </section>
+    
+        
+
+            <div id="Anesthesia Machine" class="section active">
+            <h1>Anesthesia Machine</h1>
+            <p> It is a medical device used to deliver a controlled mixture of anaesthetic gases and oxygen to a patient during a surgical or medical procedure
+                to induce and maintain anaesthesia.
+            </p>    
+            <img src="istockphoto-157429948-1024x1024.jpg" alt="Anesthesia Machine" width="100%"
+            height="auto">
+    </div>
+         
+    <div id="Mammo Scan" class="section active">
+            <h1>Mammo Scan</h1>
+            <p> It is an X-ray imaging method used to detect breast cancer and other breast diseases. It involves pressing the breast between two plates to flatten and spread the tissue for imaging.
+            </p>    
+            <img src="istockphoto-1318257405-1024x1024.jpg" alt="Mammo Scan" width="100%" height="auto">
+        </div>
+        
+        <div id="C-Arm" class="section active">
+            <h1>C-Arm</h1>
+            <p> It is a mobile X-ray device also known as flovouscopy machine used in surgical and orthopedic procedures which allows surgeons to visualize untend structure and motion procedures in real-time.
+            </p>    
+            <img src="istockphoto-1364860543-1024x1024.jpg" alt="C-Arm"  width="100%" height="auto">
+        </div>
+         
+        <div id="Defibrillator" class="section active">
+            <h1>Defibrillator</h1>
+            <p>They are devices that apply an electronic charge or current to the heart to restore a normal heartbeat.
+            </p>    
+            <img src="istockphoto-171149966-1024x1024.jpg" alt="Defibrillator"  width="100%" height="auto">
+        </div>
+        
+        <div id="Computer Tomography Scanner" class="section active">
+                <h1>Computer Tomography Scanner</h1>
+                <p> It is a medical imaging device that X-rays and computer technology to create detailed cross sectional images of the body.
+                    /* include video on how to use it */
+                </p>    
+                <img src="istockphoto-531930387-1024x1024.jpg" alt="Computer Tomography Scanner"  width="100%" height="auto">
+        </div>
+             
+        <div id="Magnetic Resonance Imaging" class="section active">
+                <h1>Magnetic Resonance Imaging</h1>
+                <p> It is a non-invasive that uses radio waves and magnets to create detailed images of the body's 
+                    internal structures. 
+                </p>    
+                <img src="istockphoto-503663386-1024x1024.jpg" alt="Magnetic Resonance Imaging" width="100%" height="auto">
+        </div>
+        
+        <div id="Ultrasound/Sonography" class="section active">
+                <h1>Ultrasound/Sonography</h1>
+                <p> It is a non-invasive imaging technique that uses high frequency sound waves to create real-time
+                    images of internal organs and soft tissues( it operates without exposure to radiation)
+                </p>    
+                <img src="istockphoto-1403042686-1024x1024.jpg" alt="Ultrasound/Sonography"  width="100%" height="auto">
+        </div>
+        
+        <script>
+            function toggleDropdown(sectionId) {
+                let menu= document.getElementById('dropdown-menu');
+                menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+            }
+            function scrollToSection(sectionId) {
+                document.getElementById(sectionId).scrollIntoView({behavior: 'smooth'});
+                
+                document.getElementById("dropdownMenu").style.display = 'none';
+            }
+            window.onclick= fuction(event) ;{
+                if (!event.target.closest('.dropdown')) {
+                    document.getElementById('dropdownMenu').style.display = 'none';
+                }
+            }
+                   
+         
+
+            </script>
 </body>
 </html>
+
+
